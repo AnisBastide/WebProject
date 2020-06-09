@@ -41,7 +41,7 @@ class connect
                 $dsn = $this->_dbType . ':dbname=' . $this->_dbName . ';host=' . $this->_dbAdress;
                 $this->_bdd = new PDO($dsn, $this->_user, $this->_pwd);
                 // echo 'work';
-                
+
             }
 
         }
@@ -105,6 +105,12 @@ class connect
 
         }
     }
- 
+
+    public function getImage($character){
+
+    echo "<img src='img/Characters/100px-Icon-" . $character . ".png'>";
+    
+    }
+
 }
 ?>
