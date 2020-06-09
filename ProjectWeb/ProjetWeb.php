@@ -1,3 +1,7 @@
+<?php 
+  require "plugin/connect.php";
+
+?>
 <DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +13,14 @@
 </head>
 <body>
 <?php include 'plugin/header.php';?>
+<?php
+               $connect = new connect('root','root','web_project','mysql','localhost');
+               echo '</br>';
+               
+               $connect->getAllRows('characters',"*");
+               
+               
+               ?>
 <?php include 'plugin/footer.php';?>
 </body>
 </html>
