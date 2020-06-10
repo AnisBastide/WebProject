@@ -109,7 +109,7 @@ class connect
     public function getImage($character){
 
     echo "<img src='img/Characters/100px-Icon-" . $character . ".png'>";
-    
+
     }
 
 }
