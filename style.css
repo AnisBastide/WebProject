@@ -1,0 +1,48 @@
+nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-around ;
+     flex-direction :row;
+     background-color: grey;
+     padding-top:3%;
+     padding-bottom:3%;
+     margin:-1%;
+ 
+ }
+ 
+ .nav{
+     font-family: Courier, monospace;
+     color: rgb(24,24,24);
+     opacity: 60%;
+     text-decoration: none;
+ 
+ }
+ .nav:hover{
+     color: paleturquoise;
+     text-decoration: none;
+ }
+ .dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child a:hover{
+    color: paleturquoise;
+}
+.dropdown-child {
+    font-family: Courier, monospace;
+    width: 140px;
+    background-color: grey;
+    position : absolute;
+    display: none;
+    min-width: 50px;
+    z-index: 100;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
