@@ -10,12 +10,14 @@
 </head>
 <body>
 <?php include "Plugin/header.php" ;  ?>
-<form method="POST" action="#">
+<div id="bgform">
+<form id="register" method="POST" action="#" >
 <?php
                $connect = new connect('root','root','web_project','mysql','localhost');
                echo '</br>';
                
                echo 'Inscrivez vous:';
+               echo '</br>';
                echo '</br>';
                $form = new autoform;
                $form->getInputText("name","Votre nom:");
@@ -24,13 +26,18 @@
                echo '</br>';
                $form->getInputPassword("user_password","Votre mot de passe:","8");
                echo '</br>';
+               echo '</br>';
                $form->getInputSubmit("Valider","submit");
-
                $connect->getInsert("user",array('NULL',"'".$_POST["name"]."'","'".$_POST["user_password"]."'","'".$_POST["mail"]."'"));
-             
+               
+               
+               
+
+                           
                
                ?>
                </form>
+               <div>
 <?php include "Plugin/footer.php";   ?>
 </body>
 </html>

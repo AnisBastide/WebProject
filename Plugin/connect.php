@@ -86,7 +86,7 @@ class connect
             $tab = $this
                 ->_bdd
                 ->query($sql);
-            echo "user has been added";
+                //echo '<div id="succes">Vous avez bien été enregistré!</div>';
         }
         catch(PDOException $e)
         {

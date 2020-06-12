@@ -3,7 +3,11 @@ nav{
      align-items: center;
      justify-content: space-around ;
      flex-direction :row;
-     background-color: grey;
+     background-image: 
+     linear-gradient(
+        to top right, 
+        lightgrey, grey
+      );;
      padding-top:3%;
      padding-bottom:3%;
      margin:-1%;
@@ -45,4 +49,94 @@ nav{
 }
 .dropdown:hover .dropdown-child {
     display: block;
+}
+#register{
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2%;
+    padding: 23px 83px 24px 83px;
+    margin: 10px -800px 8px -800px;
+}
+#bgform{
+    border-radius: 2%;
+    margin-top: 100px;
+    margin-left: 37%;
+    margin-right: 37%;
+    height: auto;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    background-image:
+    linear-gradient(
+        to top right, 
+        lightblue, lightpink
+      );
+}
+#succes{
+    color: green;
+}
+.itescia{
+    margin-left:-6px;
+    width: 100.99%;
+    padding-right:6px;
+    height:  100%;
+background-image: url("img/itescia.png");
+}
+.koding{
+    margin-left:-6px;
+    width: 100.99%;
+    padding-right:6px;
+    height:  100%;
+    background-image: url("img/koding.png");
+}
+.lab{
+    margin-left:-6px;
+    width: 100.99%;
+    padding-right:6px;
+    height:  100%;
+    background-image: url("img/lab.png");
+}
+.us{
+    margin-left:-6px;
+    width: 100.99%;
+    padding-right:6px;
+    height:  100%;
+    background-color: whitesmoke; 
+}
+.video-responsive {
+     overflow:hidden;
+      padding-bottom:56.25%;
+       position:relative;
+        height:0;
+    }
+
+.video-responsive iframe { 
+    left:0; 
+    top:0; 
+    height:40%;
+     width:40%; 
+     position:absolute;}
+
+.align{
+    display: flex;
+    justify-content: space-evenly;
+
+   
+}
+.para{
+    padding: 2%;
+    background-color: rgba(54, 54, 54, 0.5);
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2%;
+    width: 40%;
+    height: 40%;
+    color: whitesmoke;
 }

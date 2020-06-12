@@ -9,7 +9,7 @@ class autoform{
     }
     public function getInputPassword( $label,$name, $minlength)
     {
-        echo '<label for="' . $label . '">' . $name . '</label>';
+        echo '<label for="' . $label . '">' . $name . '</label><br/>';
         echo '<input type="password" name="' . $name . '" minlength="' . $minlength . '" required>';
 
     }
