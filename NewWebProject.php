@@ -10,10 +10,7 @@
 <body>
 <?php include "Plugin/header.php" ;  ?>
 <?php
-               $connect = new connect('root','root','web_project','mysql','localhost');
-               echo '</br>';
                
-               $connect->getAllRows('user',"*");
              
                
                ?>
