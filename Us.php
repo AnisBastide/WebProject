@@ -10,33 +10,99 @@
 
     <body>
         <?php include "Plugin/header.php";  ?>
-        <h1 class="title">L'Itescia</h1>
-        <div class="us_row">
-            <div><img class="imgborder" src="img/itescia.png"></div>
-            &emsp;&emsp;
-            <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec sagittis aliquam malesuada bibendum. Elementum nibh tellus molestie nunc. Tempus urna et pharetra pharetra. Aliquam sem et tortor consequat id porta nibh venenatis. Lacinia at quis risus sed. Urna condimentum mattis pellentesque id nibh tortor id. Ut sem viverra aliquet eget sit amet. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. At tempor commodo ullamcorper a lacus vestibulum sed. Lobortis feugiat vivamus at augue eget arcu. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Blandit aliquam etiam erat velit scelerisque in. Donec ultrices tincidunt arcu non. Tellus mauris a diam maecenas sed enim ut sem viverra. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Elementum tempus egestas sed sed risus. Nisi scelerisque eu ultrices vitae auctor eu augue.
+        <h1 class="title" id="Itescia">L'Itescia</h1>
+        <div id="top">
+            <div class="us_row">
+                <div><img class="imgborder" src="img/itescia.png"></div>
+                &emsp;&emsp;
+                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Nec sagittis aliquam malesuada
+                    bibendum. Elementum nibh tellus molestie nunc. Tempus urna et pharetra pharetra.
+                    Aliquam sem et tortor consequat id porta nibh venenatis. Lacinia at quis risus
+                    sed. Urna condimentum mattis pellentesque id nibh tortor id. Ut sem viverra aliquet
+                    eget sit amet. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames. At
+                    tempor commodo ullamcorper a lacus vestibulum sed. Lobortis feugiat vivamus at
+                    augue eget arcu. Laoreet suspendisse interdum consectetur libero id faucibus nisl
+                    tincidunt. Blandit aliquam etiam erat velit scelerisque in. Donec ultrices tincidunt
+                    arcu non. Tellus mauris a diam maecenas sed enim ut sem viverra. Nulla facilisi cras
+                    fermentum odio eu feugiat pretium nibh ipsum. Elementum tempus egestas sed sed risus.
+                    Nisi scelerisque eu ultrices vitae auctor eu augue.
 
-                Porta lorem mollis aliquam ut porttitor. Dictum non consectetur a erat nam at lectus urna. Ac tortor dignissim convallis aenean et tortor at risus viverra. Ac placerat vestibulum lectus mauris ultrices. Elit ullamcorper dignissim cras tincidunt. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Sit amet porttitor eget dolor morbi non arcu risus. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Vel eros donec ac odio tempor orci dapibus. Egestas purus viverra accumsan in nisl nisi. Quisque egestas diam in arcu cursus euismod. Urna duis convallis convallis tellus id interdum velit. Nibh cras pulvinar mattis nunc sed blandit.
+                    Porta lorem mollis aliquam ut porttitor. Dictum non consectetur a erat nam at lectus urna
+                    . Ac tortor dignissim convallis aenean et tortor at risus viverra. Ac placerat vestibulum
+                    lectus mauris ultrices. Elit ullamcorper dignissim cras tincidunt. Aenean vel elit scelerisque
+                    mauris pellentesque pulvinar pellentesque habitant. Ipsum nunc aliquet bibendum enim
+                    facilisis gravida neque. Sit amet porttitor eget dolor morbi non arcu risus. Dictumst
+                    vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.
+                    Vel eros donec ac odio tempor orci dapibus. Egestas purus viverra accumsan in nisl
+                    nisi. Quisque egestas diam in arcu cursus euismod. Urna duis convallis convallis
+                    tellus id interdum velit. Nibh cras pulvinar mattis nunc sed blandit.
 
-                Et magnis dis parturient montes. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Nisi porta lorem mollis aliquam ut porttitor leo a. Imperdiet nulla malesuada pellentesque elit eget. Morbi blandit cursus risus at ultrices. Tincidunt praesent semper feugiat nibh sed pulvinar. Posuere morbi leo urna molestie. Facilisi etiam dignissim diam quis enim lobortis. Quam adipiscing vitae proin sagittis nisl rhoncus. Ut consequat semper viverra nam libero justo laoreet sit. Massa enim nec dui nunc mattis enim ut tellus. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Mi eget mauris pharetra et ultrices neque ornare aenean. Tristique et egestas quis ipsum suspendisse ultrices. Vitae justo eget magna fermentum iaculis eu. Enim blandit volutpat maecenas volutpat blandit aliquam. Eget mauris pharetra et ultrices neque ornare. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Aenean euismod elementum nisi quis. In nisl nisi scelerisque eu ultrices.</div>
+                    Et magnis dis parturient montes. Aenean pharetra magna ac placerat vestibulum
+                    lectus mauris ultrices. Nisi porta lorem mollis aliquam ut porttitor leo a.
+                    Imperdiet nulla malesuada pellentesque elit eget. Morbi blandit cursus risus
+                    at ultrices. Tincidunt praesent semper feugiat nibh sed pulvinar. Posuere
+                    morbi leo urna molestie. Facilisi etiam dignissim diam quis enim lobortis.
+                    Quam adipiscing vitae proin sagittis nisl rhoncus. Ut consequat semper
+                    viverra nam libero justo laoreet sit. Massa enim nec dui nunc mattis
+                    enim ut tellus. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus.
+                    Mi eget mauris pharetra et ultrices neque ornare aenean. Tristique et egestas
+                    quis ipsum suspendisse ultrices. Vitae justo eget magna fermentum iaculis eu.
+                    Enim blandit volutpat maecenas volutpat blandit aliquam. Eget mauris pharetra et ultrices
+                    neque ornare. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt.
+                    Aenean euismod elementum nisi quis. In nisl nisi scelerisque eu ultrices.</div>
+            </div>
         </div>
         </br>
-        <div class="video">
+        <div class="video" style="background-color:lightgray; padding:1%;">
             <iframe width="1000" height="600" src="https://www.youtube.com/embed/GxY5CQfsixs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="different_bg">
-            <h1 class="title" style="color:white; text-decoration:underline;">La Coding Factory</h1>
+            <h1 class="title" style="color:white; text-decoration:underline;" id="CodingFactory">La Coding Factory</h1>
             <div class="us_row">
-                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec sagittis aliquam malesuada bibendum. Elementum nibh tellus molestie nunc. Tempus urna et pharetra pharetra. Aliquam sem et tortor consequat id porta nibh venenatis. Lacinia at quis risus sed. Urna condimentum mattis pellentesque id nibh tortor id. Ut sem viverra aliquet eget sit amet. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. At tempor commodo ullamcorper a lacus vestibulum sed. Lobortis feugiat vivamus at augue eget arcu. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Blandit aliquam etiam erat velit scelerisque in. Donec ultrices tincidunt arcu non. Tellus mauris a diam maecenas sed enim ut sem viverra. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Elementum tempus egestas sed sed risus. Nisi scelerisque eu ultrices vitae auctor eu augue.
+                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Nec sagittis aliquam malesuada
+                    bibendum. Elementum nibh tellus molestie nunc. Tempus urna et pharetra pharetra.
+                    Aliquam sem et tortor consequat id porta nibh venenatis. Lacinia at quis risus
+                    sed. Urna condimentum mattis pellentesque id nibh tortor id. Ut sem viverra aliquet
+                    eget sit amet. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames. At
+                    tempor commodo ullamcorper a lacus vestibulum sed. Lobortis feugiat vivamus at
+                    augue eget arcu. Laoreet suspendisse interdum consectetur libero id faucibus nisl
+                    tincidunt. Blandit aliquam etiam erat velit scelerisque in. Donec ultrices tincidunt
+                    arcu non. Tellus mauris a diam maecenas sed enim ut sem viverra. Nulla facilisi cras
+                    fermentum odio eu feugiat pretium nibh ipsum. Elementum tempus egestas sed sed risus.
+                    Nisi scelerisque eu ultrices vitae auctor eu augue.
 
-                    Porta lorem mollis aliquam ut porttitor. Dictum non consectetur a erat nam at lectus urna. Ac tortor dignissim convallis aenean et tortor at risus viverra. Ac placerat vestibulum lectus mauris ultrices. Elit ullamcorper dignissim cras tincidunt. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Sit amet porttitor eget dolor morbi non arcu risus. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Vel eros donec ac odio tempor orci dapibus. Egestas purus viverra accumsan in nisl nisi. Quisque egestas diam in arcu cursus euismod. Urna duis convallis convallis tellus id interdum velit. Nibh cras pulvinar mattis nunc sed blandit.
+                    Porta lorem mollis aliquam ut porttitor. Dictum non consectetur a erat nam at lectus urna
+                    . Ac tortor dignissim convallis aenean et tortor at risus viverra. Ac placerat vestibulum
+                    lectus mauris ultrices. Elit ullamcorper dignissim cras tincidunt. Aenean vel elit scelerisque
+                    mauris pellentesque pulvinar pellentesque habitant. Ipsum nunc aliquet bibendum enim
+                    facilisis gravida neque. Sit amet porttitor eget dolor morbi non arcu risus. Dictumst
+                    vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.
+                    Vel eros donec ac odio tempor orci dapibus. Egestas purus viverra accumsan in nisl
+                    nisi. Quisque egestas diam in arcu cursus euismod. Urna duis convallis convallis
+                    tellus id interdum velit. Nibh cras pulvinar mattis nunc sed blandit.
 
-                    Et magnis dis parturient montes. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Nisi porta lorem mollis aliquam ut porttitor leo a. Imperdiet nulla malesuada pellentesque elit eget. Morbi blandit cursus risus at ultrices. Tincidunt praesent semper feugiat nibh sed pulvinar. Posuere morbi leo urna molestie. Facilisi etiam dignissim diam quis enim lobortis. Quam adipiscing vitae proin sagittis nisl rhoncus. Ut consequat semper viverra nam libero justo laoreet sit. Massa enim nec dui nunc mattis enim ut tellus. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Mi eget mauris pharetra et ultrices neque ornare aenean. Tristique et egestas quis ipsum suspendisse ultrices. Vitae justo eget magna fermentum iaculis eu. Enim blandit volutpat maecenas volutpat blandit aliquam. Eget mauris pharetra et ultrices neque ornare. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Aenean euismod elementum nisi quis. In nisl nisi scelerisque eu ultrices.</div>
+                    Et magnis dis parturient montes. Aenean pharetra magna ac placerat vestibulum
+                    lectus mauris ultrices. Nisi porta lorem mollis aliquam ut porttitor leo a.
+                    Imperdiet nulla malesuada pellentesque elit eget. Morbi blandit cursus risus
+                    at ultrices. Tincidunt praesent semper feugiat nibh sed pulvinar. Posuere
+                    morbi leo urna molestie. Facilisi etiam dignissim diam quis enim lobortis.
+                    Quam adipiscing vitae proin sagittis nisl rhoncus. Ut consequat semper
+                    viverra nam libero justo laoreet sit. Massa enim nec dui nunc mattis
+                    enim ut tellus. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus.
+                    Mi eget mauris pharetra et ultrices neque ornare aenean. Tristique et egestas
+                    quis ipsum suspendisse ultrices. Vitae justo eget magna fermentum iaculis eu.
+                    Enim blandit volutpat maecenas volutpat blandit aliquam. Eget mauris pharetra et ultrices
+                    neque ornare. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt.
+                    Aenean euismod elementum nisi quis. In nisl nisi scelerisque eu ultrices.</div>
                 &emsp;&emsp;<div><img class="imgborder" src="img/coding2.png"></div>
             </div>
         </div>
         <div class="us_row">
-            <div class="us_column">
+            <div class="us_column" id="Nous">
                 <img class="imgus" src="img/nous/julien.png" height="500px" width="500px">
                 <h3>Julien</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,

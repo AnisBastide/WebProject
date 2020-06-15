@@ -87,6 +87,9 @@ span{
 .left{
     padding-right: 400px;
 }
+.img_responsive{
+    margin-top: 20%;
+}
 table {
 
     border-collapse: collapse;
@@ -134,7 +137,10 @@ h1{
    
 }
 .us_row{
-    
+    border: 1px solid #ccc;
+    padding: 2%;
+    border-radius: 30px;
+    background-color: whitesmoke;
     justify-content: space-evenly;
     margin-top: 2%;
     display: flex;
@@ -150,9 +156,10 @@ h1{
     text-align: center;
 }
 .different_bg{
+    border: 1px solid #ccc;
     margin:2%;
     padding: 1%;
-    background-color: lightseagreen;
+    background-image: linear-gradient(#20B2AA, #5F9EA0);
     border-radius: 30px;
 
 }
@@ -161,15 +168,17 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .us_column{
+    border: 1px solid #ccc;
     border-radius: 30px;
     padding: 1%;
-    background-image: linear-gradient(lightseagreen, lightblue);
+    background-image: linear-gradient(lightseagreen, #5F9EA0);
     width: 600px;
     height: 900px;
     flex-direction: column;
 }
 .imgus{
     border-radius: 100%;
+    border: 5px solid #ccc;
 }
 h3{
     font-family: myFirstFont;
@@ -201,4 +210,9 @@ footer{
 }
 .link:hover{
     color: lightseagreen;
+}
+#top{
+    padding: 3%;
+    background-image: url(img/fantasy_army.jpg)!important;
+    background-position: left;
 }
