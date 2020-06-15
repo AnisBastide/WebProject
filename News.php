@@ -10,7 +10,17 @@
     </head>
 
     <body>
-        <?php include "Plugin/header.php";  ?>
+        <?php include "Plugin/header.php";
+
+        session_start();
+        if (isset($_GET['deconnexion'])) {
+            if ($_GET['deconnexion'] == true) {
+                session_unset();
+                header("location:News.php");
+            }
+        }
+
+        ?>
     
          <?php
 $db_username = 'root';
@@ -96,11 +106,9 @@ echo' <div class="division_news">
 
 }
 getId($db);
-?> 
+?>
 
-       
-               
-                <?php include "Plugin/footer.php";   ?>
+        <?php include "Plugin/footer.php";   ?>
     </body>
 
     </html>

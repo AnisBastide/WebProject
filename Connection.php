@@ -8,7 +8,11 @@
 </head>
 
 <body>
-  
+<?php
+if($_GET['register']){
+    echo "Your account is sucessfully created. Now you need to log in.";
+}
+?>
         <div id="container">
             <!-- zone de connexion -->
 
