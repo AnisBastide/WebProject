@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Web Project - Characters & Story</title>
     </head>
 
     <body>
@@ -167,35 +167,35 @@ function sendLeft($db,$id){
 echo '
 <div class="characters_container">
     <div>
-        <img class="img_responsive" src="img/characters/'.$id.'.png">
+        <img style="border-radius:20px;" class="img_responsive" src="img/characters/'.$id.'.png">
     </div>
     <div class="characters_column">
 
         <div class="characters_row">
             <div class="left">
-                <b>Name:</b>'.getName($db,$id).'</br>
-                <b>Class:</b>'.getClass($db,$id).'</br>
-                <b>Faction:</b>'.getFaction($db,$id).'</br>
+                <span class="style">Name: </span>'.getName($db,$id).'</br>
+                <span class="style">Class: </span>'.getClass($db,$id).'</br>
+                <span class="style">Faction: </span>'.getFaction($db,$id).'</br>
             </div>
 
             <div>
-               <b> Damage:</b>'.getDamage($db,$id).'</br>
-               <b>Speed:</b>'.getSpeed($db,$id).'</br>
-               <b> Defense:</b>'.getDefense($db,$id).'</br>
+            <span class="style"> Damage: </span>'.getDamage($db,$id).'</br>
+            <span class="style">Speed: </span>'.getSpeed($db,$id).'</br>
+            <span class="style"> Defense: </span>'.getDefense($db,$id).'</br>
             </div>
         </div>
         </br>
 
         <div>
-           <b> Story:</b></br>
+        <span class="style"> Story:</span></br>
            <span>'.getStory($db,$id).'</span>
         </div>
         <hr>
         <div>
             <table>
-                <tr><td><b>Ability 1</b></td><td>'.getAbility1($db,$id).'</td><td>'.getDescAb1($db,$id).' </td></tr>
-                <tr><td><b>Ability 2</b></td><td>'.getAbility2($db,$id).'</td><td>'.getDescAb2($db,$id).'</td></tr>
-                <tr><td><b>Ultimate</b></td><td>'.getUltimate($db,$id).'</td><td>'.getDescUlt($db,$id).' </td></tr>
+                <tr><td><span class="style">Ability 1</span></td><td>'.getAbility1($db,$id).'</td><td>'.getDescAb1($db,$id).' </td></tr>
+                <tr><td><span class="style">Ability 2</span></td><td>'.getAbility2($db,$id).'</td><td>'.getDescAb2($db,$id).'</td></tr>
+                <tr><td><span class="style">Ultimate</span></td><td>'.getUltimate($db,$id).'</td><td>'.getDescUlt($db,$id).' </td></tr>
             </table>
         </div>
     </div>
@@ -207,36 +207,36 @@ function sendRight($db,$id){
             
     <div class="characters_column">
 
-        <div class="characters_row">
+    <div class="characters_row">
         <div class="left">
-        <b>Name:</b>'.getName($db,$id).'</br>
-        <b> Class:</b>'.getClass($db,$id).'</br>
-        <b>Faction:</b>'.getFaction($db,$id).'</br>
-    </div>
-
-    <div>
-       <b> Damage:</b>'.getDamage($db,$id).'</br>
-       <b>Speed:</b>'.getSpeed($db,$id).'</br>
-       <b> Defense:</b>'.getDefense($db,$id).'</br>
-    </div>
+            <span class="style">Name: </span>'.getName($db,$id).'</br>
+            <span class="style">Class: </span>'.getClass($db,$id).'</br>
+            <span class="style">Faction: </span>'.getFaction($db,$id).'</br>
         </div>
-        </br>
 
         <div>
-           <b> Story:</b></br>
-           <span>'.getStory($db,$id).'</span>
-        </div>
-        <hr>
-        <div>
-            <table>
-            <tr><td><b>Ability 1</b></td><td>'.getAbility1($db,$id).'</td><td>'.getDescAb1($db,$id).' </td></tr>
-            <tr><td><b>Ability 2</b></td><td>'.getAbility2($db,$id).'</td><td>'.getDescAb2($db,$id).'</td></tr>
-            <tr><td><b>Ultimate</b></td><td>'.getUltimate($db,$id).'</td><td>'.getDescUlt($db,$id).' </td></tr>
-            </table>
+        <span class="style"> Damage: </span>'.getDamage($db,$id).'</br>
+        <span class="style">Speed: </span>'.getSpeed($db,$id).'</br>
+        <span class="style"> Defense: </span>'.getDefense($db,$id).'</br>
         </div>
     </div>
+    </br>
+
     <div>
-        <img class="img_responsive" src="img/characters/'.$id.'.png">
+    <span class="style"> Story:</span></br>
+       <span>'.getStory($db,$id).'</span>
+    </div>
+    <hr>
+    <div>
+        <table>
+            <tr><td><span class="style">Ability 1</span></td><td>'.getAbility1($db,$id).'</td><td>'.getDescAb1($db,$id).' </td></tr>
+            <tr><td><span class="style">Ability 2</span></td><td>'.getAbility2($db,$id).'</td><td>'.getDescAb2($db,$id).'</td></tr>
+            <tr><td><span class="style">Ultimate</span></td><td>'.getUltimate($db,$id).'</td><td>'.getDescUlt($db,$id).' </td></tr>
+        </table>
+    </div>
+</div>
+    <div>
+        <img style="border-radius:20px;" class="img_responsive" src="img/characters/'.$id.'.png">
     </div>
 </div>';
 

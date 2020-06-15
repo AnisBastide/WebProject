@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <!-- importer le fichier de style -->
     <link rel="stylesheet" href="style2.css" media="screen" type="text/css" />
+    <title>Web Project - Connection</title>
 </head>
 
 <body>

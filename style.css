@@ -12,11 +12,7 @@ nav{
      align-items: center;
      justify-content: space-around ;
      flex-direction :row;
-     background-image: 
-     linear-gradient(
-        to top right, 
-        lightpink, lightblue, lightblue
-      );
+     background-image: url(img/fantasy_army.jpg);
      padding-top:3%;
      padding-bottom:3%;
      margin:-1%;
@@ -24,15 +20,15 @@ nav{
  }
  
  .nav{
-     font-size: 130%;
-     font-family: Courier, monospace;
-     color: rgb(24,24,24);
+     font-size: 150%;
+     font-family: myFirstFont;
+     color: whitesmoke;
      opacity: 60%;
      text-decoration: none;
  
  }
  .nav:hover{
-     color: black;
+     color: lightseagreen;
      text-decoration: none;
  }
  .dropdown {
@@ -40,16 +36,13 @@ nav{
     display: inline-block;
 }
 .dropdown-child a:hover{
-    color: black;
+    color: lightseagreen;
 }
 .dropdown-child {
-    font-family: Courier, monospace;
+    font-family: myFirstFont;
+    font-size: 120%;
     width: 140px;
-    background-image: 
-     linear-gradient(
-        to top right, 
-        lightpink, lightblue, lightblue
-      );;
+    background-image: url(img/fantasy_army.jpg);
     position : absolute;
     display: none;
     min-width: 50px;
@@ -65,40 +58,14 @@ nav{
     display: block;
 }
 
-.itescia{
-    margin-left:-6px;
-    width: 100.99%;
-    padding-right:6px;
-    height:  100%;
-background-image: url("img/itescia.png");
-}
-.koding{
-    margin-left:-6px;
-    width: 100.99%;
-    padding-right:6px;
-    height:  100%;
-    background-image: url("img/koding.png");
-}
-.lab{
-    margin-left:-6px;
-    width: 100.99%;
-    padding-right:6px;
-    height:  100%;
-    background-image: url("img/lab.png");
-}
-.us{
-    margin-left:-6px;
-    width: 100.99%;
-    padding-right:6px;
-    height:  100%;
-    background-color: whitesmoke; 
-}
 .characters_container{
     padding-top: 5%;
     display: flex;
     flex-direction: row;
     font-size:130%;
     color: rgb(73, 38, 33);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     
     
 }
@@ -127,6 +94,7 @@ table {
 }
   
 table, th, td {
+
     padding:5px;
     border: 1px solid black;
 }
@@ -135,4 +103,102 @@ table, th, td {
     width: 100%;
    min-width: 10%;
    height: auto;
+}
+.division_news{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2%;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 30px;
+
+}
+.right{
+    text-align: right;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(img/font/OldLondon.ttf);
+}
+.style{
+    color: lightseagreen;
+    font-family: myFirstFont;
+    font-size: 120%;  
+
+}
+h1{
+    font-family: myFirstFont;
+    color: lightseagreen;
+   
+}
+.us_row{
+    
+    justify-content: space-evenly;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.title{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 450%;
+}
+.video{
+    text-align: center;
+}
+.different_bg{
+    margin:2%;
+    padding: 1%;
+    background-color: lightseagreen;
+    border-radius: 30px;
+
+}
+.txt{
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.us_column{
+    border-radius: 30px;
+    padding: 1%;
+    background-image: linear-gradient(lightseagreen, lightblue);
+    width: 600px;
+    height: 900px;
+    flex-direction: column;
+}
+.imgus{
+    border-radius: 100%;
+}
+h3{
+    font-family: myFirstFont;
+    font-size: 300%;
+    color: white;
+    text-decoration: underline;
+}
+.imgborder{
+    border-radius: 30px;
+}
+footer{
+    color: white;
+    font-family: myFirstFont;
+    font-size: 300%;
+    border-top: solid 10px lightseagreen ;
+    margin-top: 5%;
+    height: 100px;
+    float: left;
+    width: 100%;
+    background-image:url(img/fantasy_army.jpg);
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 50px;
+
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    color: lightseagreen;
 }
