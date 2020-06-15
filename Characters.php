@@ -55,16 +55,89 @@ function getDamage($db,$id)
         return $dmg;
         
 }
-function getAbility($db,$id)
+function getDefense($db,$id)
 {
-    $requete = "SELECT ab1 FROM characters WHERE id=".$id;
+    $requete = "SELECT defense FROM characters WHERE id=".$id;
         $exec_requete = mysqli_query($db,$requete);
         $reponse      = mysqli_fetch_array($exec_requete);
-        $ab=$reponse['ab1'];
-        return $ab;
+        $dfs=$reponse['defense'];
+        return $dfs;
         
 }
-function getId($db){
+function getSpeed($db,$id)
+{
+    $requete = "SELECT speed FROM characters WHERE id=".$id;
+        $exec_requete = mysqli_query($db,$requete);
+        $reponse      = mysqli_fetch_array($exec_requete);
+        $spd=$reponse['speed'];
+        return $spd;
+        
+}
+
+function getAbility1($db,$id)
+{
+    $requete = "SELECT ability_1 FROM characters WHERE id=".$id;
+        $exec_requete = mysqli_query($db,$requete);
+        $reponse      = mysqli_fetch_array($exec_requete);
+        $ab1=$reponse['ability_1'];
+        return $ab1;
+        
+}
+function getAbility2($db,$id)
+{
+    $requete = "SELECT ability_2 FROM characters WHERE id=".$id;
+        $exec_requete = mysqli_query($db,$requete);
+        $reponse      = mysqli_fetch_array($exec_requete);
+        $ab2=$reponse['ability_2'];
+        return $ab2;
+        
+}
+function getUltimate($db,$id)
+{
+    $requete = "SELECT ultimate FROM characters WHERE id=".$id;
+        $exec_requete = mysqli_query($db,$requete);
+        $reponse      = mysqli_fetch_array($exec_requete);
+        $ult=$reponse['ultimate'];
+        return $ult;
+        
+}
+function getStory($db,$id)
+{
+    $requete = "SELECT story FROM characters WHERE id=".$id;
+        $exec_requete = mysqli_query($db,$requete);
+        $reponse      = mysqli_fetch_array($exec_requete);
+        $story=$reponse['story'];
+        return $story;
+        
+}
+function getDescAb1($db,$id)
+{
+    $requete = "SELECT desc_ab1 FROM characters WHERE id=".$id;
+        $exec_requete = mysqli_query($db,$requete);
+        $reponse      = mysqli_fetch_array($exec_requete);
+        $dab1=$reponse['desc_ab1'];
+        return $dab1;
+        
+}
+function getDescAb2($db,$id)
+{
+    $requete = "SELECT desc_ab2 FROM characters WHERE id=".$id;
+        $exec_requete = mysqli_query($db,$requete);
+        $reponse      = mysqli_fetch_array($exec_requete);
+        $dab2=$reponse['desc_ab2'];
+        return $dab2;
+        
+}
+function getDescUlt($db,$id)
+{
+    $requete = "SELECT desc_ult FROM characters WHERE id=".$id;
+        $exec_requete = mysqli_query($db,$requete);
+        $reponse      = mysqli_fetch_array($exec_requete);
+        $dabu=$reponse['desc_ult'];
+        return $dabu;
+        
+}
+function generatePageById($db){
     $boolean=true;
     $array=array();
     $requete = "SELECT id FROM characters";
@@ -78,13 +151,13 @@ function getId($db){
             $boolean=false;
         }
     }
-    foreach($array as $id){
-        foreach($id as $id2){
-            if ($id2%2==0){
-                sendRight($db,$id2);
+    foreach($array as $arrayid){
+        foreach($arrayid as $idvalue){
+            if ($idvalue%2==0){
+                sendRight($db,$idvalue);
             }
             else{
-               sendLeft($db,$id2); 
+               sendLeft($db,$idvalue); 
             }
         }
        
@@ -107,34 +180,22 @@ echo '
 
             <div>
                <b> Damage:</b>'.getDamage($db,$id).'</br>
-               <b>Speed:</b>'.getDamage($db,$id).'</br>
-               <b> Defense:</b>'.getDamage($db,$id).'</br>
+               <b>Speed:</b>'.getSpeed($db,$id).'</br>
+               <b> Defense:</b>'.getDefense($db,$id).'</br>
             </div>
         </div>
         </br>
 
         <div>
            <b> Story:</b></br>
-           <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec fringilla nunc, sed vehicula mauris.
-            Pellentesque sit amet dapibus orci. Etiam vestibulum eros nisi, vitae finibus sem placerat non. Donec sed
-            consequat sem. Nullam eget lobortis ligula, id tincidunt risus. Aliquam vel vestibulum tortor, et faucibus
-            dolor. Pellentesque a molestie tellus. Nullam ut molestie odio, eget maximus dui. Proin vel urna ac erat
-            pretium ultricies id non arcu. Pellentesque nec cursus enim. Pellentesque tempor blandit orci. Etiam molestie
-            porta euismod. Sed finibus nisl tincidunt urna tristique malesuada.</span>
+           <span>'.getStory($db,$id).'</span>
         </div>
         <hr>
         <div>
             <table>
-                <tr><td><b>Ability 1</b></td><td>'.getAbility($db,$id).'</td><td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec fringilla nunc, sed vehicula mauris.
-            Pellentesque sit amet dapibus orci. Etiam vestibulum eros nisi, vitae finibus sem placerat non. Donec sed
-            consequat sem. 
-          </td></tr>
-                <tr><td><b>Ability 2</b></td><td>'.getAbility($db,$id).'</td><td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec fringilla nunc, sed vehicula mauris.
-            Pellentesque sit amet dapibus orci. Etiam vestibulum eros nisi, vitae finibus sem placerat non. Donec sed
-            consequat sem. </td></tr>
-                <tr><td><b>Ability 3</b></td><td>'.getAbility($db,$id).'</td><td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec fringilla nunc, sed vehicula mauris.
-            Pellentesque sit amet dapibus orci. Etiam vestibulum eros nisi, vitae finibus sem placerat non. Donec sed
-            consequat sem. </td></tr>
+                <tr><td><b>Ability 1</b></td><td>'.getAbility1($db,$id).'</td><td>'.getDescAb1($db,$id).' </td></tr>
+                <tr><td><b>Ability 2</b></td><td>'.getAbility2($db,$id).'</td><td>'.getDescAb2($db,$id).'</td></tr>
+                <tr><td><b>Ultimate</b></td><td>'.getUltimate($db,$id).'</td><td>'.getDescUlt($db,$id).' </td></tr>
             </table>
         </div>
     </div>
@@ -155,34 +216,22 @@ function sendRight($db,$id){
 
     <div>
        <b> Damage:</b>'.getDamage($db,$id).'</br>
-       <b>Speed:</b>'.getDamage($db,$id).'</br>
-       <b> Defense:</b>'.getDamage($db,$id).'</br>
+       <b>Speed:</b>'.getSpeed($db,$id).'</br>
+       <b> Defense:</b>'.getDefense($db,$id).'</br>
     </div>
         </div>
         </br>
 
         <div>
            <b> Story:</b></br>
-           <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec fringilla nunc, sed vehicula mauris.
-            Pellentesque sit amet dapibus orci. Etiam vestibulum eros nisi, vitae finibus sem placerat non. Donec sed
-            consequat sem. Nullam eget lobortis ligula, id tincidunt risus. Aliquam vel vestibulum tortor, et faucibus
-            dolor. Pellentesque a molestie tellus. Nullam ut molestie odio, eget maximus dui. Proin vel urna ac erat
-            pretium ultricies id non arcu. Pellentesque nec cursus enim. Pellentesque tempor blandit orci. Etiam molestie
-            porta euismod. Sed finibus nisl tincidunt urna tristique malesuada.</span>
+           <span>'.getStory($db,$id).'</span>
         </div>
         <hr>
         <div>
             <table>
-            <tr><td><b>Ability 1</b></td><td>'.getAbility($db,$id).'</td><td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec fringilla nunc, sed vehicula mauris.
-            Pellentesque sit amet dapibus orci. Etiam vestibulum eros nisi, vitae finibus sem placerat non. Donec sed
-            consequat sem. 
-          </td></tr>
-                <tr><td><b>Ability 2</b></td><td>'.getAbility($db,$id).'</td><td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec fringilla nunc, sed vehicula mauris.
-            Pellentesque sit amet dapibus orci. Etiam vestibulum eros nisi, vitae finibus sem placerat non. Donec sed
-            consequat sem. </td></tr>
-                <tr><td><b>Ability 3</b></td><td>'.getAbility($db,$id).'</td><td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec fringilla nunc, sed vehicula mauris.
-            Pellentesque sit amet dapibus orci. Etiam vestibulum eros nisi, vitae finibus sem placerat non. Donec sed
-            consequat sem. </td></tr>
+            <tr><td><b>Ability 1</b></td><td>'.getAbility1($db,$id).'</td><td>'.getDescAb1($db,$id).' </td></tr>
+            <tr><td><b>Ability 2</b></td><td>'.getAbility2($db,$id).'</td><td>'.getDescAb2($db,$id).'</td></tr>
+            <tr><td><b>Ultimate</b></td><td>'.getUltimate($db,$id).'</td><td>'.getDescUlt($db,$id).' </td></tr>
             </table>
         </div>
     </div>
@@ -192,7 +241,7 @@ function sendRight($db,$id){
 </div>';
 
 }
-getId($db);
+generatePageById($db);
 
 ?>
         </div>
