@@ -1,3 +1,12 @@
+html{
+    background-image: 
+    linear-gradient(
+       to top right, 
+       white,white,whitesmoke,lightgrey,lightgrey,lightgrey
+     );
+    
+    
+}    
 nav{
      display: flex;
      align-items: center;
@@ -6,8 +15,8 @@ nav{
      background-image: 
      linear-gradient(
         to top right, 
-        lightgrey, grey
-      );;
+        lightpink, lightblue, lightblue
+      );
      padding-top:3%;
      padding-bottom:3%;
      margin:-1%;
@@ -15,6 +24,7 @@ nav{
  }
  
  .nav{
+     font-size: 130%;
      font-family: Courier, monospace;
      color: rgb(24,24,24);
      opacity: 60%;
@@ -22,7 +32,7 @@ nav{
  
  }
  .nav:hover{
-     color: paleturquoise;
+     color: black;
      text-decoration: none;
  }
  .dropdown {
@@ -30,12 +40,16 @@ nav{
     display: inline-block;
 }
 .dropdown-child a:hover{
-    color: paleturquoise;
+    color: black;
 }
 .dropdown-child {
     font-family: Courier, monospace;
     width: 140px;
-    background-color: grey;
+    background-image: 
+     linear-gradient(
+        to top right, 
+        lightpink, lightblue, lightblue
+      );;
     position : absolute;
     display: none;
     min-width: 50px;
@@ -50,37 +64,7 @@ nav{
 .dropdown:hover .dropdown-child {
     display: block;
 }
-#register{
-    background-color: white;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 2%;
-    padding: 23px 83px 24px 83px;
-    margin: 10px -800px 8px -800px;
-}
-#bgform{
-    border-radius: 2%;
-    margin-top: 100px;
-    margin-left: 37%;
-    margin-right: 37%;
-    height: auto;
-    width: 450px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    background-image:
-    linear-gradient(
-        to top right, 
-        lightblue, lightpink
-      );
-}
-#succes{
-    color: green;
-}
+
 .itescia{
     margin-left:-6px;
     width: 100.99%;
@@ -109,34 +93,46 @@ background-image: url("img/itescia.png");
     height:  100%;
     background-color: whitesmoke; 
 }
-.video-responsive {
-     overflow:hidden;
-      padding-bottom:56.25%;
-       position:relative;
-        height:0;
-    }
-
-.video-responsive iframe { 
-    left:0; 
-    top:0; 
-    height:40%;
-     width:40%; 
-     position:absolute;}
-
-.align{
+.characters_container{
+    padding-top: 5%;
     display: flex;
-    justify-content: space-evenly;
-
-   
+    flex-direction: row;
+    font-size:130%;
+    color: rgb(73, 38, 33);
+    
+    
 }
-.para{
+span{
+    font-style: normal;
+    font-size: 80%;
+    color: black;
+}
+
+.characters_column{
     padding: 2%;
-    background-color: rgba(54, 54, 54, 0.5);
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 2%;
-    width: 40%;
-    height: 40%;
-    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.characters_row{
+    display: flex;
+    flex-direction: row; 
+}
+.left{
+    padding-right: 400px;
+}
+table {
+
+    border-collapse: collapse;
+  
+}
+  
+table, th, td {
+    padding:5px;
+    border: 1px solid black;
+}
+.division{
+    padding-top: 5%;
+    width: 100%;
+   min-width: 10%;
+   height: auto;
 }

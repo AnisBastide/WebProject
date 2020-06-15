@@ -7,7 +7,7 @@
     <body style='background:#fff;'>
         <div id="content">
             <!-- tester si l'utilisateur est connecté -->
-     <a href='principale.php?deconnexion=true'><span>Déconnexion</span></a>
+     <a href='Home.php?deconnexion=true'><span>Déconnexion</span></a>
             
             <!-- tester si l'utilisateur est connecté -->
             <?php
