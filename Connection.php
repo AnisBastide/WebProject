@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<div><a class="button" href="News.php"> Back to home</a></div>
   
         <div id="container">
             <!-- zone de connexion -->
