@@ -12,10 +12,12 @@ nav{
      align-items: center;
      justify-content: space-around ;
      flex-direction :row;
-     background-image: url(img/fantasy_army.jpg);
+     background-image: url(img/navbg.jpg);
+     background-position: 50% 20%;
      padding-top:3%;
      padding-bottom:3%;
      margin:-1%;
+     border-bottom: 1px solid #ccc;
  
  }
  
@@ -47,13 +49,13 @@ nav{
     display: inline-block;
 }
 .dropdown-child a:hover{
-    color: lightseagreen;
+    color: darkseagreen;
 }
 .dropdown-child {
     font-family: myFirstFont;
     font-size: 120%;
     width: 140px;
-    background-image: url(img/fantasy_army.jpg);
+    background-color: lightseagreen;
     position : absolute;
     display: none;
     min-width: 50px;
@@ -235,9 +237,9 @@ footer{
     border-top: solid 10px lightseagreen ;
     margin-top: 5%;
     height: 100px;
-    float: left;
     width: 100%;
-    background-image:url(img/fantasy_army.jpg);
+    background-image:url(img/navbg.jpg);
+    background-position: bottom;
     display: flex;
     justify-content:space-evenly;
     padding-top: 50px;
@@ -293,10 +295,9 @@ footer{
     opacity: 1;
 }
 .textappaer{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: whitesmoke;
-    color: rgb(53, 53, 53);
-    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 45px;
     padding: 16px 32px;
 }
   

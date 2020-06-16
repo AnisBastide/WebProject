@@ -20,16 +20,42 @@ session_start();
 
 
         <form method="POST">
-        <h1>Profil</h1>
+            <h1>Profil</h1>
             <div class="profilrow">
-                <div class="img_profil"></div>
+                <?php
+                $db_username = 'root';
+                $db_password = 'root';
+                $db_name     = 'web_project';
+                $db_host     = 'localhost';
+                $db = mysqli_connect($db_host, $db_username, $db_password, $db_name);
+                function getImg($db)
+                {
+                    $requete = 'SELECT img FROM utilisateur WHERE nom_utilisateur="' . $_SESSION["username"] . '"';
+                    $exec_requete = mysqli_query($db, $requete);
+                    $reponse      = mysqli_fetch_array($exec_requete);
+                    $idimg = $reponse['img'];
+                    return $idimg;
+                }
+                $img = getImg($db);
+                if ($img == NULL) {
+                    $img = 0;
+                }
+                echo '<div style=" background-position: 50% 15%;
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                background-image: url(img/characters/' . $img . '.png);"></div>';
+
+
+                ?>
+
                 <div class="profilcolumn">
-                    
+
 
                     <h2><?php echo $_SESSION["username"] ?></h2> </br>
                 </div>
             </div>
-</br>
+            </br>
 
 
             <label><b>Change username</b></label>
@@ -37,6 +63,13 @@ session_start();
 
             <label><b>Change password</b></label>
             <input type="password" placeholder="Enter your new password" name="new_pw" >
+
+
+           
+
+            <!-- <select name="avatarlist">
+             
+            </select> -->
 
             <input type="submit" id='submit' name="button" value='EXECUTE'>
 
