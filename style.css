@@ -23,14 +23,25 @@ nav{
      font-size: 150%;
      font-family: myFirstFont;
      color: whitesmoke;
-     opacity: 60%;
      text-decoration: none;
  
  }
+ .nav2{
+    font-size: 150%;
+    font-family: myFirstFont;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
  .nav:hover{
      color: lightseagreen;
      text-decoration: none;
  }
+ .nav2:hover{
+    color: seagreen;
+    text-decoration: none;
+}
+
  .dropdown {
     position: relative;
     display: inline-block;
@@ -48,6 +59,7 @@ nav{
     min-width: 50px;
     z-index: 100;
 }
+
 .dropdown-child a {
     color: white;
     padding: 20px;
@@ -55,6 +67,30 @@ nav{
     display: block;
 }
 .dropdown:hover .dropdown-child {
+    display: block;
+}
+.dropdown-child2 {
+    font-family: myFirstFont;
+    font-size: 120%;
+    width: 100%;
+    background-color: lightseagreen;
+    position : absolute;
+    display: none;
+    min-width: 50px;
+    z-index: 100;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.dropdown-child2 a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child2 {
     display: block;
 }
 
@@ -91,7 +127,7 @@ span{
     margin-top: 20%;
 }
 table {
-
+    background-color: rgba(32, 190, 170,0.5);
     border-collapse: collapse;
   
 }
@@ -114,8 +150,9 @@ table, th, td {
     justify-content: center;
     margin: 2%;
     padding: 1%;
-    border: 1px solid black;
-    border-radius: 30px;
+    border: 1px solid rgb(51, 51, 51);
+    box-shadow: 30px -10px lightseagreen;
+    
 
 
 }
@@ -178,6 +215,7 @@ h1{
     flex-direction: column;
 }
 .imgus{
+    transition: .5s ease;
     border-radius: 100%;
     border: 5px solid #ccc;
 }
@@ -217,3 +255,48 @@ footer{
     background-image: url(img/fantasy_army.jpg)!important;
     background-position: left;
 }
+.connect{
+    background-color: lightseagreen;
+    width:200px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border: 1px solid #ccc;
+}
+.button_disco{
+    font-family: myFirstFont!important;
+    background-color: lightseagreen;
+    color: white;
+    border: 1px solid lightseagreen;
+ font-size: 110%;
+}
+.test:hover{
+    color: seagreen;
+
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.containerus{
+    position: relative;
+}  
+.containerus:hover .imgus {
+    opacity: 0.3;
+}
+  
+.containerus:hover .middle {
+    opacity: 1;
+}
+.textappaer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    color: rgb(53, 53, 53);
+    font-size: 16px;
+    padding: 16px 32px;
+}
+  

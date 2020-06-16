@@ -103,7 +103,12 @@
         </div>
         <div class="us_row">
             <div class="us_column" id="Nous">
-                <img class="imgus" src="img/nous/julien.png" height="500px" width="500px">
+                <div class="containerus">
+                    <img class="imgus" src="img/nous/julien.png" height="500px" width="500px">
+                    <div class="middle">
+                        <div class="textappaer">18 ans</div>
+                    </div>
+                </div>
                 <h3>Julien</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -118,7 +123,13 @@
             </div>
             &emsp;
             <div class="us_column">
-                <img class="imgus" src="img/nous/nissou.jpg" height="500px" width="500px">
+                <div class="containerus">
+                    <img class="imgus" src="img/nous/nissou.jpg" height="500px" width="500px">
+                    <div class="middle">
+                        <div class="textappaer">19 ans</div>
+                    </div>
+                </div>
+
                 <h3>Anis</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna

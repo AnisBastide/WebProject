@@ -1,6 +1,30 @@
 body{
     background-image:url("img/fantasy_army.jpg");
     background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+ 
+}
+.contactbody{
+    background-image:url("img/fantasy_army_2.jpg");
+    background-size: 100%; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+.profilbody{
+    background-image:url("img/fantasy_army_3.jpg");
+    background-size: 100%; 
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 }
 @font-face {
     font-family: myFirstFont;
@@ -10,7 +34,8 @@ body{
 
     font-family: myFirstFont!important;
     font-size: 200%;
-    padding-left: 7%;
+
+    text-align: center;
   }
 #container{
     width:400px;
@@ -41,6 +66,18 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 500px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;vertical-align: top;
+    height: 5em;
 }
 
 /* Set a style for all buttons */
@@ -78,4 +115,25 @@ input[type=submit]:hover {
     background-color: white;
     color: lightseagreen;
     border: 1px solid lightseagreen;
+}
+h2{
+    font-family: myFirstFont!important;
+    color: lightseagreen;
+    text-align: center;
+}
+.img_profil{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: url(img/characters/1.png);
+    background-position: 50% 15%;
+}
+.profilrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.profilcolumn{
+    display: flex;
+    flex-direction: column;
 }
