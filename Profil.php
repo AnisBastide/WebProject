@@ -95,7 +95,7 @@ or die('could not connect to database');
 $username = mysqli_real_escape_string($db,htmlspecialchars($_POST['new_username']));
 $password = mysqli_real_escape_string($db,htmlspecialchars($_POST['new_pw']));
 if($_GET['password_changed']){
-    echo "password sucessfully changed";
+    echo "<div class='success'>password sucessfully changed</div>";
 }
 unset($_GET);
 if(isset($_POST['button'])){
