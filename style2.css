@@ -15,7 +15,7 @@ body{
 #container{
     width:400px;
     margin:0 auto;
-    margin-top:10%;
+    margin-top:5%;
    
 }
 /* Bordered form */
@@ -60,5 +60,22 @@ input[type=submit]:hover {
     color: lightseagreen;
     border: 1px solid lightseagreen;
 }
-
-
+.button {
+    font-family: myFirstFont!important;
+    margin-top: 1%;
+    margin-left: 1%;
+    background-color: lightseagreen; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:hover {
+    font-family: myFirstFont!important;
+    background-color: white;
+    color: lightseagreen;
+    border: 1px solid lightseagreen;
+}

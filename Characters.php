@@ -167,7 +167,7 @@ function sendLeft($db,$id){
 echo '
 <div class="characters_container">
     <div>
-        <img style="border-radius:20px;" class="img_responsive" src="img/characters/'.$id.'.png">
+        <img width="261" height="392" style="border-radius:20px;" class="img_responsive" src="img/characters/'.$id.'.png">
     </div>
     <div class="characters_column">
 
@@ -236,7 +236,7 @@ function sendRight($db,$id){
     </div>
 </div>
     <div>
-        <img style="border-radius:20px;" class="img_responsive" src="img/characters/'.$id.'.png">
+        <img width="261" height="392" style="border-radius:20px;" class="img_responsive" src="img/characters/'.$id.'.png">
     </div>
 </div>';
 

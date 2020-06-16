@@ -13,6 +13,8 @@ if($_GET['register']){
     echo "Your account is sucessfully created. Now you need to log in.";
 }
 ?>
+<div><a class="button" href="News.php"> Back to home</a></div>
+  
         <div id="container">
             <!-- zone de connexion -->
 

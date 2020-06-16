@@ -89,8 +89,8 @@ function getAuthor($db,$id)
 }
 function send($db,$id){
 echo' <div class="division_news">
-         <div>
-             <img src="img/news/'.$id.'.jpg" style="border-radius:20px;" height="220px" width="300px">
+         <div class="img_center">
+             <img src="img/news/'.$id.'.jpg" style="border-radius:20px;padding-top:10px;" height="220px" width="300px" >
          </div>
 &emsp;&emsp;
          <div>
