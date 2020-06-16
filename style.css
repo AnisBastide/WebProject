@@ -49,7 +49,7 @@ nav{
     display: inline-block;
 }
 .dropdown-child a:hover{
-    color: lightseagreen;
+    color: darkseagreen;
 }
 .dropdown-child {
     font-family: myFirstFont;
