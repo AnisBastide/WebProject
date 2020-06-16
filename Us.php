@@ -10,7 +10,7 @@
 
     <body>
         <?php include "Plugin/header.php";  ?>
-        <h1 class="title" id="Itescia">L'Itescia</h1>
+        <h1 class="title" id="Itescia">Itescia</h1>
         <div id="top">
             <div class="us_row">
                 <div><img class="imgborder" src="img/itescia.png"></div>
@@ -59,7 +59,7 @@
             <iframe width="1000" height="600" src="https://www.youtube.com/embed/GxY5CQfsixs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="different_bg">
-            <h1 class="title" style="color:white; text-decoration:underline;" id="CodingFactory">La Coding Factory</h1>
+            <h1 class="title" style="color:white; text-decoration:underline;" id="CodingFactory">The Coding Factory</h1>
             <div class="us_row">
                 <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Nec sagittis aliquam malesuada
@@ -106,7 +106,7 @@
                 <div class="containerus">
                     <img class="imgus" src="img/nous/julien.png" height="500px" width="500px">
                     <div class="middle">
-                        <div class="textappaer">18 ans</div>
+                        <div class="textappaer">18 yo</div>
                     </div>
                 </div>
                 <h3>Julien</h3>
@@ -126,7 +126,7 @@
                 <div class="containerus">
                     <img class="imgus" src="img/nous/nissou.jpg" height="500px" width="500px">
                     <div class="middle">
-                        <div class="textappaer">19 ans</div>
+                        <div class="textappaer">19 yo</div>
                     </div>
                 </div>
 
