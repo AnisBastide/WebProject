@@ -1,6 +1,8 @@
 <html>
 <?php
 session_start();
+
+
 ?>
 
 <head>
@@ -61,9 +63,11 @@ $username = mysqli_real_escape_string($db,htmlspecialchars($_POST['new_username'
 $password = mysqli_real_escape_string($db,htmlspecialchars($_POST['new_pw']));
 if($_GET['password_changed']){
     echo "password sucessfully changed";
-    $_GET['password_changed']=false;
 }
+unset($_GET);
 if(isset($_POST['button'])){
+    unset($_POST);
+
     if($username!==""){
         $requete = "UPDATE utilisateur
         SET nom_utilisateur='".$username."'
@@ -71,7 +75,6 @@ if(isset($_POST['button'])){
         $exec_requete = mysqli_query($db,$requete);
         $_SESSION['username']=$username;
         header("location:Profil.php");
-
     }
     if($password!==""){
         $requete = "UPDATE utilisateur
@@ -79,7 +82,6 @@ if(isset($_POST['button'])){
         WHERE nom_utilisateur= '".$_SESSION['username']."';";
         $exec_requete = mysqli_query($db,$requete);
         header("location:Profil.php?password_changed=true");
-
 
     }
 
