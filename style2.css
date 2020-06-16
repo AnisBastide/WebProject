@@ -121,13 +121,7 @@ h2{
     color: lightseagreen;
     text-align: center;
 }
-.img_profil{
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    background-image: url(img/characters/1.png);
-    background-position: 50% 15%;
-}
+
 .profilrow{
     display: flex;
     flex-direction: row;
