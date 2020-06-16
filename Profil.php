@@ -57,10 +57,10 @@ session_start();
 
 
             <label><b>Change username</b></label>
-            <input type="text" placeholder="Enter your new username" name="new_username" required>
+            <input type="text" placeholder="Enter your new username" name="new_username" >
 
             <label><b>Change password</b></label>
-            <input type="text" placeholder="Enter your new password" name="new_pw" required>
+            <input type="password" placeholder="Enter your new password" name="new_pw" >
 
 
            
@@ -78,7 +78,46 @@ session_start();
 
 
         </form>
+<?php
 
+// connexion à la base de données
+$db_username = 'root';
+$db_password = 'root';
+$db_name     = 'web_project';
+$db_host     = 'localhost';
+$db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
+or die('could not connect to database');
+
+// on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
+// pour éliminer toute attaque de type injection SQL et XSS
+$username = mysqli_real_escape_string($db,htmlspecialchars($_POST['new_username']));
+$password = mysqli_real_escape_string($db,htmlspecialchars($_POST['new_pw']));
+if($_GET['password_changed']){
+    echo "password sucessfully changed";
+    $_GET['password_changed']=false;
+}
+if(isset($_POST['button'])){
+    if($username!==""){
+        $requete = "UPDATE utilisateur
+        SET nom_utilisateur='".$username."'
+        WHERE nom_utilisateur= '".$_SESSION['username']."';";
+        $exec_requete = mysqli_query($db,$requete);
+        $_SESSION['username']=$username;
+        header("location:Profil.php");
+
+    }
+    if($password!==""){
+        $requete = "UPDATE utilisateur
+        SET mot_de_passe='".$password."'
+        WHERE nom_utilisateur= '".$_SESSION['username']."';";
+        $exec_requete = mysqli_query($db,$requete);
+        header("location:Profil.php?password_changed=true");
+
+
+    }
+
+}
+?>
 
     </div>
 
