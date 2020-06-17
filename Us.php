@@ -110,15 +110,11 @@
                     </div>
                 </div>
                 <h3>Julien</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Facilisis mauris sit amet massa vitae tortor. Nisl
-                    condimentum id venenatis a condimentum vitae. Non enim
-                    praesent elementum facilisis leo. Nibh tortor id aliquet
-                    lectus proin nibh nisl. Egestas integer eget aliquet
-                    nibh praesent tristique magna. Iaculis eu non diam phasellus
-                    vestibulum lorem sed risus. Augue neque gravida in fermentum
-                    et sollicitudin ac. </p>
+                <p class="textpresus">Hi, I'm Julien, I'm currently a full-time student at the Coding Factory in Paris.</br>
+                    My passions in life are movies, video games and figures collections.</br>
+                    My dream is to work in the video game industry to share my passion with everyone and for created story and universe for everyone.</br>
+                    I prefer to work on the front of the project in school projects, I really enjoy studying the design of web site.</br>
+                    To me, in the future, the absolute dream job would be to work for a famous company of video games : Blizzard Entertainement.</p>
 
             </div>
             &emsp;
@@ -131,7 +127,7 @@
                 </div>
 
                 <h3>Anis</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                <p class="textpresus">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Facilisis mauris sit amet massa vitae tortor. Nisl
                     condimentum id venenatis a condimentum vitae. Non enim
