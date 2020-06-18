@@ -245,7 +245,7 @@ generatePageById($db);
 
 ?>
         </div>
-        <img class="division" src="img/story.png">
+        <img id="storypart" class="division" src="img/story.png">
         
         <?php include "Plugin/footer.php";   ?>
     </body>

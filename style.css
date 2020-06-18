@@ -205,7 +205,7 @@ h1{
 }
 .txt{
     font-size: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Gill Sans", sans-serif;
 }
 .us_column{
     border: 1px solid #ccc;
@@ -295,13 +295,13 @@ footer{
     opacity: 1;
 }
 .textappaer{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Gill Sans", sans-serif;
     color: white;
     font-size: 45px;
     padding: 16px 32px;
 }
 .textpresus{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Gill Sans", sans-serif;
     font-size: 110%;
     color: rgb(194, 194, 194);
     line-height: 25px;
@@ -316,12 +316,24 @@ footer{
     padding-bottom: 5%;
     width: 100%;
 }
+.conc_row p{
+    font-family: "Gill Sans", sans-serif;
+    font-size: 150%; 
+}
 .conc_center{
     padding-top: 5%;
     padding-bottom: 5%;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.conc_center p {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 150%;   
+}
+.conc_center a{
+    text-decoration: underline;
+    color: black;
 }
 .conc_cara{
     background-image: url(img/heroes.jpg);
@@ -330,16 +342,20 @@ footer{
     height: 100%;
 }
 .conc_cara p{
+    line-height: 300%;
+    font-family: "Gill Sans", sans-serif;
     width: 45%;
+    min-width: 45%;
+    max-height: 80%;
     padding-left: 5%;
     padding-bottom: 5%;
-    font-size: 120%;
+    font-size: 1vw;
     color: whitesmoke;
 }
 
 .conc_cara h2{
     width: 45%;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-left: 5%;
     font-family: myFirstFont;
     font-size: 500%;
@@ -352,21 +368,27 @@ footer{
 }
 .techno img{
     width: 20%;
-    height: auto;
+    height: 20%;
     padding: 5%;
 }
 .techno p{
     padding: 5%;
+    font-size: 120%;
+    line-height: 300%;
+    font-family: "Gill Sans", sans-serif;
     border: 1px solid rgb(199, 199, 199);
     background-color: whitesmoke;
     box-shadow: 30px -10px lightseagreen;
+}
+.techno a{
+    text-decoration: underline;
+    color: black;
 }
 .hero_class{
     display: flex;
     flex-direction: row;
 }
 .class_column{
-    display: flex;
     text-align: center;
     flex-direction: column;
 
@@ -375,7 +397,9 @@ footer{
 .class_column img{
     width: 100px;
     height: 100px;
-    padding-left: 35%;
+}
+.class_column p{
+    font-family: "Gill Sans", sans-serif;
 }
 .conc_title{
     font-family: MyFirstFont;
