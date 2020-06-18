@@ -23,10 +23,10 @@
         ?>
     
          <?php
-$db_username = 'root';
-$db_password = 'root';
+$db_username = 'anis';
+$db_password = 'anis';
 $db_name     = 'web_project';
-$db_host     = 'localhost';
+$db_host     = '217.160.241.170';
 $db = mysqli_connect($db_host, $db_username, $db_password,$db_name);
 
 function getId($db){

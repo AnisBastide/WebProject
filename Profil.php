@@ -23,10 +23,10 @@ session_start();
             <h1>Profil</h1>
             <div class="profilrow">
                 <?php
-                $db_username = 'root';
-                $db_password = 'root';
+                $db_username = 'anis';
+                $db_password = 'anis';
                 $db_name     = 'web_project';
-                $db_host     = 'localhost';
+                $db_host     = '217.160.241.170';
                 $db = mysqli_connect($db_host, $db_username, $db_password, $db_name);
                 function getImg($db)
                 {
@@ -81,15 +81,6 @@ session_start();
 
         </form>
 <?php
-
-// connexion à la base de données
-$db_username = 'root';
-$db_password = 'root';
-$db_name     = 'web_project';
-$db_host     = 'localhost';
-$db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
-or die('could not connect to database');
-
 // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
 // pour éliminer toute attaque de type injection SQL et XSS
 $username = mysqli_real_escape_string($db,htmlspecialchars($_POST['new_username']));
