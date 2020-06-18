@@ -127,6 +127,7 @@ span{
 }
 .img_responsive{
     margin-top: 20%;
+    filter: drop-shadow(0 0 0.55rem black);
 }
 table {
     background-color: rgba(32, 190, 170,0.5);
@@ -410,4 +411,24 @@ footer{
 h4{
     font-family: MyFirstFont;
     font-size: 200%;
+}
+.story{
+    text-align: center;
+    flex-direction: column;
+    padding: 5%;
+}
+.story h1{
+    font-size: 400%;
+}
+.story img{
+    width: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    filter: drop-shadow(0 0 0.75rem black);
+
+}
+.story p{
+    font-size: 120%;
+    line-height: 180%;
+    font-family: "Gill Sans", sans-serif;
 }

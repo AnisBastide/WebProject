@@ -54,16 +54,57 @@ session_start();
                 </div>
             </div>
             </br>
+            <label><b>Change profil picture</b></label></br></br>
+            <select name="profil_picture">
+                <?php
+                $db_username = 'root';
+                $db_password = 'root';
+                $db_name     = 'web_project';
+                $db_host     = 'localhost';
+                $db = mysqli_connect($db_host, $db_username, $db_password, $db_name);
+                function getCharactersName($db)
+                {
+                    $boolean = true;
+                    $array = array();
+                    $requete = "SELECT name FROM characters";
+                    $exec_requete = mysqli_query($db, $requete);
+                    while ($boolean) {
+                        $stockage = $exec_requete->fetch_row();
+                        if ($stockage !== NULL) {
+                            $array[] = $stockage;
+                        } else {
+                            $boolean = false;
+                        }
+                    }
+
+                    foreach ($array as $array2) {
+                        foreach ($array2 as $name) {
+                            echo '<option>' . $name . '</option>';
+                        }
+                    }
+                }
+                getCharactersName($db);
+
+
+
+
+
+
+                ?>
+            </select></br></br>
 
 
             <label><b>Change username</b></label>
-            <input type="text" placeholder="Enter your new username" name="new_username" >
+            <input type="text" placeholder="Enter your new username" name="new_username">
 
             <label><b>Change password</b></label>
-            <input type="password" placeholder="Enter your new password" name="new_pw" >
+            <input type="password" placeholder="Enter your new password" name="new_pw">
 
 
-           
+
+
+
+
 
             <!-- <select name="avatarlist">
              
@@ -78,45 +119,64 @@ session_start();
 
 
         </form>
-<?php
+        <?php
 
-// connexion à la base de données
-$db_username = 'root';
-$db_password = 'root';
-$db_name     = 'web_project';
-$db_host     = 'localhost';
-$db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
-or die('could not connect to database');
+        // connexion à la base de données
+        $db_username = 'root';
+        $db_password = 'root';
+        $db_name     = 'web_project';
+        $db_host     = 'localhost';
+        $db = mysqli_connect($db_host, $db_username, $db_password, $db_name)
+            or die('could not connect to database');
 
-// on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
-// pour éliminer toute attaque de type injection SQL et XSS
-$username = mysqli_real_escape_string($db,htmlspecialchars($_POST['new_username']));
-$password = mysqli_real_escape_string($db,htmlspecialchars($_POST['new_pw']));
-if($_GET['password_changed']){
-    echo "<div class='success'>password sucessfully changed</div>";
-}
-if(isset($_POST['button'])){
-    if($username!==""){
-        $requete = "UPDATE utilisateur
-        SET nom_utilisateur='".$username."'
-        WHERE nom_utilisateur= '".$_SESSION['username']."';";
-        $exec_requete = mysqli_query($db,$requete);
-        $_SESSION['username']=$username;
-        header("location:Profil.php");
+        // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
+        // pour éliminer toute attaque de type injection SQL et XSS
+        $username = mysqli_real_escape_string($db, htmlspecialchars($_POST['new_username']));
+        $password = mysqli_real_escape_string($db, htmlspecialchars($_POST['new_pw']));
+        if ($_GET['password_changed']) {
+            echo "<div class='success'>password sucessfully changed</div>";
+        }
+        if (isset($_POST['button'])) {
+            if ($username !== "") {
+                $requete = "UPDATE utilisateur
+        SET nom_utilisateur='" . $username . "'
+        WHERE nom_utilisateur= '" . $_SESSION['username'] . "';";
+                $exec_requete = mysqli_query($db, $requete);
+                $_SESSION['username'] = $username;
+                header("location:Profil.php");
+            }
+            if ($password !== "") {
+                $requete = "UPDATE utilisateur
+        SET mot_de_passe='" . $password . "'
+        WHERE nom_utilisateur= '" . $_SESSION['username'] . "';";
+                $exec_requete = mysqli_query($db, $requete);
+                header("location:Profil.php?password_changed=true");
+            }
+            $profil_img=$_POST["profil_picture"];
+            if($profil_img !==""){
+                $requete ="SELECT id FROM characters WHERE name='".$profil_img."'";
+                $exec_requete = mysqli_query($db, $requete);
+                $reponse      = mysqli_fetch_array($exec_requete);
+                $stock=$reponse['id'];
+                $requete2 ="UPDATE utilisateur SET img='".$stock."' WHERE nom_utilisateur='". $_SESSION['username'] . "'";
+                $exec_requete = mysqli_query($db, $requete2);
+                header("location:Profil.php");
+             
 
-    }
-    if($password!==""){
-        $requete = "UPDATE utilisateur
-        SET mot_de_passe='".$password."'
-        WHERE nom_utilisateur= '".$_SESSION['username']."';";
-        $exec_requete = mysqli_query($db,$requete);
-        header("location:Profil.php?password_changed=true");
 
 
-    }
 
-}
-?>
+            }
+        }
+
+
+
+
+
+
+
+
+        ?>
 
     </div>
 
