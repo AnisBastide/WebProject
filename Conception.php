@@ -12,7 +12,7 @@
         <?php include "Plugin/header.php";  ?>
 
         <div class="conc_row">
-            <img src="img/labday.jpg" style=" width:40%; height:100%;padding-left:5%; padding-right:5%;">
+            <img src="img/labday.jpg" style=" width:40%; height:100%;padding-left:5%; padding-right:5%;" >
             <p style=" padding-right:5%;"><span class="conc_title">An idea from scratch:</span></br>
                 The basic idea for this game was born during a lab'day. In our school,
                 lab'day is a period in which groups of students work on projects
