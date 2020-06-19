@@ -15,7 +15,7 @@
             <div class="us_row">
                 <div><img class="imgborder" src="img/itescia.png"></div>
                 &emsp;&emsp;
-                <div class="txt">Itescia is the school of I-management, it offers many diplomas in these fields such as the computer development diploma or the diploma of human resources. 
+                <div class="txt_it">Itescia is the school of I-management, it offers many diplomas in these fields such as the computer development diploma or the diploma of human resources. 
                     It offers apprenticeship training. This allows you to learn in business while being paid and also allows you not to pay the cost of your degree.
                     Itescia has several campuses, one in Cergy and one in Cergy-Pontoise. The school was founded in 2004,
                     it was born from the merger of ITIN (an alternating computer school) and ESCIA (a school of management and management).</div>
@@ -95,10 +95,10 @@
 
                 <h3>Anis</h3>
                 <p class="textpresus">Hello, I'm Anis.
-                    I am an apprentice developer at the coding factory, I work in a company that uses c# and vb .net.
-                    I'm a back developer, I prefer to take care of what's going on behind and not the visual part of the projects.
-                    My passions are code, video games and music.
-                    Later I would like to be a developer at blizzard Entertainment.</p>
+                    I am an apprentice developer at the Coding Factory, I work in a company that uses C# and vb.NET.</br>
+                    I'm a back developer, I prefer to take care of what's going on behind and not the visual part of the projects.</br>
+                    My passions are code, video games and music.</br>
+                    Later I would like to be a developer at Blizzard Entertainment.</p>
             </div>
         </div>
 
