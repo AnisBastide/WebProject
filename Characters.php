@@ -12,11 +12,11 @@
         <?php include "Plugin/header.php";  ?>
         <img class="division" src="img/characters.png">
         <?php
-$db_username = 'anis';
-$db_password = 'anis';
-$db_name     = 'web_project';
-$db_host     = '217.160.241.170';
-$db = mysqli_connect($db_host, $db_username, $db_password,$db_name);
+        $db_username = 'anis';
+        $db_password = 'anis';
+        $db_name     = 'web_project';
+        $db_host     = '217.160.241.170';
+        $db = mysqli_connect($db_host, $db_username, $db_password, $db_name);
 
 
         function getName($db, $id)
@@ -232,13 +232,46 @@ $db = mysqli_connect($db_host, $db_username, $db_password,$db_name);
         </div>
         <img id="storypart" class="division" src="img/story.png">
         <div class="story">
-            <h1>Nom de la map</h1>
+            <h1>The World of Daear</h1>
             <img src="img/map.png">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras adipiscing enim eu turpis egestas pretium aenean. Ultrices sagittis orci a scelerisque purus semper eget duis. Augue mauris augue neque gravida in fermentum et sollicitudin. Ut morbi tincidunt augue interdum velit euismod. Faucibus in ornare quam viverra orci sagittis eu. Lectus proin nibh nisl condimentum id venenatis a condimentum. Diam quam nulla porttitor massa id. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Dignissim enim sit amet venenatis. Felis imperdiet proin fermentum leo vel orci porta. Purus sit amet volutpat consequat mauris nunc congue nisi vitae.
+            <p>Daear, the land on which our history takes place, is a fantasy world made up of several
+                civilized races such as the classic Men, Dwarves and Elves. The events on which the story will
+                be based are those of the return of Kraynord, a powerful sorcerer who disappeared thousands
+                of years ago.
+                Kraynord was a powerful sorcerer at the head of the Temples of the Twenty, an alliance
+                of the most powerful masters of magic of the time. The purpose of this alliance was to win
+                the ultimate victory against the Diafols, demonic beings in perpetual war with all other
+                races. The Diafols were such a great threat that all nations united in an attempt to destroy
+                them once and for all. With the help of the Temples of the Twenty, the demons were defeated
+                and peace was established. But that victory came at a price. Kraynord was sacrificed
+                in battle by his brothers in arms in a moment of defeat. His power was so great and
+                his confusion so great that his body perished but not his spirit. The latter, fractured
+                in two: one part freed itself from its anger by taking away its reason and its love,
+                the other part was consumed by incomprehension and revenge and became Krayn, the avatar
+                of revenge.
+                However, neither of these two parts of Kraynord's spirit made itself known to the world.
+                Kraynord's body was taken to the depths of the present Sï lands, which was then a vast
+                forest as untamed as it was indomitable. Kraynord's reasoned mind manages to reincarnate
+                from his lifeless body deep in the forest. Krayn, on the other hand, was forced to wander
+                indefinitely in this land he hated so much.
 
-                Semper viverra nam libero justo. At auctor urna nunc id. Tempus iaculis urna id volutpat. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Scelerisque purus semper eget duis at tellus at urna. Enim facilisis gravida neque convallis a cras. Dapibus ultrices in iaculis nunc sed augue. Nibh tellus molestie nunc non blandit massa enim nec dui. Magna sit amet purus gravida quis. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Feugiat nibh sed pulvinar proin gravida hendrerit. Id donec ultrices tincidunt arcu. Vulputate ut pharetra sit amet aliquam id diam. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Lacus viverra vitae congue eu consequat ac.
-
-                Mi eget mauris pharetra et ultrices. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Lectus quam id leo in vitae turpis massa. Pellentesque habitant morbi tristique senectus. Dignissim diam quis enim lobortis scelerisque fermentum. Est ullamcorper eget nulla facilisi etiam. Volutpat sed cras ornare arcu dui vivamus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Sapien pellentesque habitant morbi tristique. Tempus quam pellentesque nec nam aliquam sem. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Quisque egestas diam in arcu. Porttitor lacus luctus accumsan tortor posuere. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Nec nam aliquam sem et. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget.</p>
+                All these events date back to a very distant time. Only old books mention them and many have
+                become more legend than fact. Today, Kraynord has become the Timeless Tree and has given
+                birth to the Sï race, which he nourishes with his magic. Krayn, on the other hand, put a
+                plan into action. For hundreds of years he waited for the races to develop, expand and
+                increasingly forget their past. And then he set his heart on the Elves. Slowly, he began
+                to corrupt the weakest minds in their capital city and, for years, he had them build a
+                huge magic bomb hidden underneath the immense city. Once the bomb was ready, he ordered
+                all but one of his corrupts to leave town. The latter activated the bomb and the
+                disaster began. The entire sublime Elven capital was instantly razed to the ground.
+                Krayn used the power released by the bomb to reincarnate himself in the body of the
+                person who had embodied the bomb, thus preventing him from being disintegrated (at least
+                for his body). Then, with that same power, he raised all the dead of the capital and
+                raised in less than a day a huge army of death, ready to quench Krayn's vengeance.
+                With the help of his corrupt spared, his immense power and his brand new army, his
+                conquest of chaos began. The Elves, caught unawares and deprived of their high command,
+                lost almost all of their territory. In the face of this new and immense threat, Elves,
+                Dwarves and Men once again joined forces to face the one who had once fought at their side.</p>
         </div>
 
         <?php include "Plugin/footer.php";   ?>
